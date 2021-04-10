@@ -1,5 +1,5 @@
-from inputFunction import getInput
-from random import uniform
+# from inputFunction import getInput
+# from random import uniform
 
 m = []
 
@@ -9,7 +9,7 @@ for i in range(12):
 l = int(input())
 t = input("Operação S ou M: ")
 
-array = getInput("", float, 144, 0, 11)
+# array = getInput("", float, 144, 0, 11)
 
 # ESSE FOR ABAIXO INSERE 144 VALORES 
 # FLOAT ENTRE 0 E 11 NO ARRAY PARA TESTAR
@@ -34,5 +34,5 @@ if(t.upper() == "S"):
     print(f"Soma dos elementos da linha {l}: {s}")
 
 elif(t.upper() == "M"):
-    avg = s / (len(m[l]))
+    avg = round(s / (len(m[l])),1)
     print(f"Média dos elementos da linha {l}: {avg}")
