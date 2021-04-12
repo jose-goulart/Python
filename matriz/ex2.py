@@ -8,7 +8,7 @@ for i in range(12):
 
 t = input("Operação S ou M: ")
 
-array = getInput("", float, 144, 0, 11)
+array = getInput("", float, 144, -999999999, 999999999)
 
 # ESSE FOR ABAIXO INSERE 144 VALORES
 # FLOAT ENTRE 0 E 11 NO ARRAY PARA TESTAR
