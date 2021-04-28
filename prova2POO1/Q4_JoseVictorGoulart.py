@@ -1,9 +1,17 @@
 # Nome: José Victor Goulart dos Santos
 # Matrícula: 20200412
-
-while True:
-    print("1 - Preencher o tabuleiro lendo valores do teclado")
-    print("2 - Preencher o tabuleiro randomicamente")
-    print("3 - Encerrar o programa")
-option = input("Digite o número para uma das opções acima: ")
-
+i = 0
+dict = {}
+arrayDict = []
+n, m = [int(x) for x in input().split()]
+while(i < m):
+    a, b, c = [int(x) for x in input().split()]
+    if(a >= n or b > n):
+        print(f"Existem apenas {n} cidades!")
+    else:
+        dict['a'] = a
+        dict['b'] = b
+        dict['c'] = c
+        arrayDict.append(dict.copy())
+        i += 1
+print(arrayDict)
